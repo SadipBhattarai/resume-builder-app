@@ -8,4 +8,5 @@ router.get("/", (req, res, next) => {
         next(e)
     }
 });
+router.use("/api/v1/users", userRouter);
 module.exports = router;
